@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Tribal -->
+
+  <FactionDef ParentName="TribeBase" Name="ESCP_FalmerTribeBase" Abstract="True">
+    <leaderTitle>knight-chancellor</leaderTitle>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+	<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canStageAttacks>true</canStageAttacks>
+    <factionIconPath>World/WorldObjects/Expanding/ESCP_FalmerSettlement</factionIconPath>
+    <factionNameMaker>ESCP_NamerFactionFalmer</factionNameMaker>
+    <settlementNameMaker>ESCP_NamerSettlementFalmerHouse</settlementNameMaker>
+    <allowedCultures Inherit="False">
+		<li>ESCP_Falmeri</li>
+	</allowedCultures>
+    <!-- Don't enable unless there are actually backstories -->
+		<!--
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>ESCP_Falmer_Tribal</li>
+			</categories>
+			<commonality>0.95</commonality>
+		  </li>
+		</backstoryFilters>
+		-->
+    <caravanTraderKinds>
+      <li>Caravan_Neolithic_BulkGoods</li>
+      <li>Caravan_Neolithic_WarMerchant</li>
+      <li>Caravan_Neolithic_Slaver</li>
+      <li>Caravan_Neolithic_ShamanMerchant</li>
+	  <!-- VE Medieval -->
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_Farmer</li>
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_WineMerchant</li>
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_ArtPatron</li>
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_Armourer</li>
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_Weaponsmith</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds Inherit = "False">
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Neolithic_Standard</li>
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Base_Medieval_Standard</li>
+    </baseTraderKinds>
+    <raidLootMaker>ESCP_FalmerTribeRaidLootMaker</raidLootMaker>
+    <pawnGroupMakers Inherit="false">
+      <li>
+        <!-- Normal fights, ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <ESCP_FalmerTribal_Penitent>5</ESCP_FalmerTribal_Penitent>
+          <ESCP_FalmerTribal_Warrior>5</ESCP_FalmerTribal_Warrior>
+          <ESCP_FalmerTribal_Archer>10</ESCP_FalmerTribal_Archer>
+          <ESCP_FalmerTribal_Hunter>10</ESCP_FalmerTribal_Hunter>
+          <ESCP_FalmerTribal_HeavyArcher>10</ESCP_FalmerTribal_HeavyArcher>
+          <ESCP_FalmerTribal_Berserker>5</ESCP_FalmerTribal_Berserker>
+          <ESCP_FalmerTribal_ChiefRanged>3</ESCP_FalmerTribal_ChiefRanged>
+          <ESCP_FalmerTribal_ChiefMelee>1.5</ESCP_FalmerTribal_ChiefMelee>
+	   </options>
+      </li>
+      <li>
+        <!-- Normal fights, ranged only -->
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <ESCP_FalmerTribal_Archer>10</ESCP_FalmerTribal_Archer>
+          <ESCP_FalmerTribal_Hunter>10</ESCP_FalmerTribal_Hunter>
+          <ESCP_FalmerTribal_HeavyArcher>10</ESCP_FalmerTribal_HeavyArcher>
+          <ESCP_FalmerTribal_ChiefRanged>5</ESCP_FalmerTribal_ChiefRanged>
+        </options>
+      </li>
+
+      <li>
+        <!-- Normal fights, melee only -->
+        <kindDef>Combat</kindDef>
+        <commonality>30</commonality>
+        <options>
+          <ESCP_FalmerTribal_Penitent>10</ESCP_FalmerTribal_Penitent>
+          <ESCP_FalmerTribal_Warrior>10</ESCP_FalmerTribal_Warrior>
+          <ESCP_FalmerTribal_Berserker>10</ESCP_FalmerTribal_Berserker>
+          <ESCP_FalmerTribal_ChiefMelee>5</ESCP_FalmerTribal_ChiefMelee>
+      </options>
+      </li>
+      <li>
+        <!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>5</commonality>
+        <options>
+          <ESCP_FalmerTribal_Breacher>5</ESCP_FalmerTribal_Breacher>
+          <ESCP_FalmerTribal_Penitent>5</ESCP_FalmerTribal_Penitent>
+          <ESCP_FalmerTribal_Warrior>5</ESCP_FalmerTribal_Warrior>
+          <ESCP_FalmerTribal_Archer>10</ESCP_FalmerTribal_Archer>
+          <ESCP_FalmerTribal_Hunter>10</ESCP_FalmerTribal_Hunter>
+          <ESCP_FalmerTribal_HeavyArcher>10</ESCP_FalmerTribal_HeavyArcher>
+          <ESCP_FalmerTribal_Berserker>5</ESCP_FalmerTribal_Berserker>
+          <ESCP_FalmerTribal_ChiefRanged>3</ESCP_FalmerTribal_ChiefRanged>
+          <ESCP_FalmerTribal_ChiefMelee>1.5</ESCP_FalmerTribal_ChiefMelee>
+      </options>
+      </li>
+      <li>
+        <!-- Peaceful -->
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <ESCP_FalmerTribal_Warrior>20</ESCP_FalmerTribal_Warrior>
+          <ESCP_FalmerTribal_Archer>10</ESCP_FalmerTribal_Archer>
+          <ESCP_FalmerTribal_Hunter>10</ESCP_FalmerTribal_Hunter>
+          <ESCP_FalmerTribal_HeavyArcher>10</ESCP_FalmerTribal_HeavyArcher>
+          <ESCP_FalmerTribal_Berserker>5</ESCP_FalmerTribal_Berserker>
+          <ESCP_FalmerTribal_ChiefRanged>3</ESCP_FalmerTribal_ChiefRanged>
+          <ESCP_FalmerTribal_ChiefMelee>1.5</ESCP_FalmerTribal_ChiefMelee>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <ESCP_FalmerTribal_Trader>1</ESCP_FalmerTribal_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2.5</Alpaca>
+          <Elephant>2</Elephant>
+        </carriers>
+        <guards>
+          <ESCP_FalmerTribal_Warrior>7</ESCP_FalmerTribal_Warrior>
+          <ESCP_FalmerTribal_Archer>10</ESCP_FalmerTribal_Archer>
+          <ESCP_FalmerTribal_Hunter>10</ESCP_FalmerTribal_Hunter>
+          <ESCP_FalmerTribal_HeavyArcher>10</ESCP_FalmerTribal_HeavyArcher>
+          <ESCP_FalmerTribal_Berserker>7</ESCP_FalmerTribal_Berserker>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <ESCP_FalmerTribal_Warrior>7</ESCP_FalmerTribal_Warrior>
+          <ESCP_FalmerTribal_Archer>10</ESCP_FalmerTribal_Archer>
+          <ESCP_FalmerTribal_Hunter>10</ESCP_FalmerTribal_Hunter>
+          <ESCP_FalmerTribal_HeavyArcher>10</ESCP_FalmerTribal_HeavyArcher>
+          <ESCP_FalmerTribal_Berserker>7</ESCP_FalmerTribal_Berserker>
+          <ESCP_FalmerTribal_ChiefRanged>10</ESCP_FalmerTribal_ChiefRanged>
+        </options>
+      </li>
+      <li>
+        <kindDef>Settlement_RangedOnly</kindDef>
+        <options>
+          <ESCP_FalmerTribal_Archer>10</ESCP_FalmerTribal_Archer>
+          <ESCP_FalmerTribal_Hunter>10</ESCP_FalmerTribal_Hunter>
+          <ESCP_FalmerTribal_HeavyArcher>10</ESCP_FalmerTribal_HeavyArcher>
+          <ESCP_FalmerTribal_ChiefRanged>10</ESCP_FalmerTribal_ChiefRanged>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <ESCP_FalmerTribal_Miner>1</ESCP_FalmerTribal_Miner>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <ESCP_FalmerTribal_Hunter>1</ESCP_FalmerTribal_Hunter>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <ESCP_FalmerTribal_Farmer>1</ESCP_FalmerTribal_Farmer>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+	<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</apparelStuffFilter>
+  </FactionDef>
+
+  <ThingSetMakerDef>
+    <defName>ESCP_FalmerTribeRaidLootMaker</defName>
+    <root Class="ThingSetMaker_MarketValue">
+      <fixedParams>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+            <li>Jade</li>
+            <li>MedicineHerbal</li>
+            <li>Pemmican</li>
+          </thingDefs>
+        </filter>
+      </fixedParams>
+    </root>
+  </ThingSetMakerDef>
+  
+  <FactionDef ParentName="ESCP_FalmerTribeBase">
+    <defName>ESCP_FalmerTribeCivil</defName>
+    <label>Falmer remnants</label>
+	<description>The remnants of the Falmer race. The true Falmer were once thought long extinct, with only their degenerated cousins remaining. Recently the untainted Falmer have made their presence known, though they rarely venture from their cities.\n\nAs the Falmer have been isolated for so long, they will primarily wield spears and bows. They also lack tradable resources, and thus will rarely trade with outsiders.</description>
+	<settlementGenerationWeight>0.5</settlementGenerationWeight>
+	<colorSpectrum>
+      <li>(0.85, 0.85, 0.85)</li>
+	  <li>(0.85, 0.85, 0.95)</li>
+	  <li>(0.85, 0.75, 0.85)</li>
+    </colorSpectrum>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+    </disallowedMemes>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>40</configurationListOrderPriority>
+  </FactionDef>
+
+</Defs>

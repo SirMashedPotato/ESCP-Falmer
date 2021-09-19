@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Achievements Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+						<AchievementsExpanded.AchievementTabDef>
+							<defName>ESCP_AchievementsTab</defName>
+							<label>ESCP</label>
+						</AchievementsExpanded.AchievementTabDef>
+						
+						<AchievementsExpanded.Reward_MapIncident>
+							<defName>ESCP_RewardFalmerJoins</defName>
+							<label>Tribal Falmer Joins</label>
+							<tab>ESCP_AchievementsTab</tab>
+							
+							<cost>150</cost>
+							<incident>ESCP_FalmerJoins</incident>
+						</AchievementsExpanded.Reward_MapIncident>
+						
+						<!-- -->
+
+						<AchievementsExpanded.AchievementDef>
+							<defName>ESCP_FalmerSlayer</defName>
+							<label>They Were Practically Extinct Already</label>
+							<description>Slay 50 Falmer</description>
+							<bgtexPath>Achievements/ESCP_AchievementBackground</bgtexPath>
+							<tab>ESCP_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KillTracker">
+								<raceDef>ESCP_FalmerRace</raceDef>
+								<count>50</count>
+							</tracker>
+
+							<texPath>Achievements/ESCP_FalmerSlayer</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>ESCP_AchievementFalmerSettlement</defName>
+							<label>Giving Them One Final Push</label>
+							<description>Destroy a Falmer settlement belonging to the Civil Falmer Colonies faction</description>
+							<bgtexPath>Achievements/ESCP_AchievementBackground</bgtexPath>
+							<tab>ESCP_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.SettlementDefeatTracker">
+								<def>ESCP_FalmerTribeCivil</def>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/ESCP_AchievementFalmerSettlement</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>ESCP_AchievementFalmerColonists</defName>
+							<label>A New Place To Call Home</label>
+							<description>Have 12 Falmer in your colony at the same time</description>
+							<bgtexPath>Achievements/ESCP_AchievementBackground</bgtexPath>
+							<tab>ESCP_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.RaceDefTracker">
+								<raceDefs>
+									<li>
+										<key>ESCP_FalmerRace</key>
+										<value>12</value>
+									</li>
+								</raceDefs>
+							</tracker>
+
+							<texPath>Achievements/ESCP_AchievementFalmerColonists</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+						
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

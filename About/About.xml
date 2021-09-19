@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>ESCP - Falmer</name>
+	<packageId>SirMashedPotato.ESCP.Falmer</packageId>
+	<author>SirMashedPotato</author>
+	<supportedVersions>
+    	<li>1.3</li>
+	</supportedVersions>
+	<description>adds in a playable Falmer race using Humanoid Alien Race Framework. Falmer are highly adapted to living in cold environments, and will only suffer hypothermia or frostbite in extremely low temperatures. Due to their near extinction, the Falmer are very likely to generate with relationships.\n\n-Supports Vanilla Achievements Expanded\n-Requires Harmony\n-Requires Humanoid Alien Races 2.0\n-Based on the 'Elder Scrolls' series by Bethesda Game Studios.
+	</description>
+	<modDependencies>
+	  <li>
+        <packageId>brrainz.harmony</packageId>
+		<displayName>Harmony</displayName>
+		<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+		<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+      </li>
+      <li>
+        <packageId>erdelf.HumanoidAlienRaces</packageId>
+        <displayName>Humanoid Alien Races 2.0 </displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
+      </li>
+    </modDependencies>
+	<loadAfter>
+	  <li>brrainz.harmony</li>
+      <li>Ludeon.RimWorld</li>
+      <li>Ludeon.RimWorld.Ideology</li>
+	  <li>Ludeon.RimWorld.Royalty</li>
+      <li>erdelf.HumanoidAlienRaces</li>
+	  <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+    </loadAfter>
+	<loadBefore>
+	</loadBefore>
+	<incompatibleWith>
+      <li>SirMashedPotato.MorrowRim.FalmerRace</li>
+      <li>SirMashedPotato.MorrowRim.FalmerFactions</li>
+    </incompatibleWith>
+
+</ModMetaData>

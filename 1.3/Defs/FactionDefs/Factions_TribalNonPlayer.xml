@@ -4,6 +4,18 @@
   <!-- Tribal -->
 
   <FactionDef ParentName="TribeBase" Name="ESCP_FalmerTribeBase" Abstract="True">
+	<modExtensions>
+		<li Class="ESCP_RaceTools.SettlementPreference">
+			<useTemperatureRange>true</useTemperatureRange>
+			<temperatureRangeMin>-80</temperatureRangeMin>
+			<temperatureRangeMax>10</temperatureRangeMax>
+			<requiredHillLevels>
+				<li>LargeHills</li>
+				<li>Mountainous</li>
+			</requiredHillLevels>
+			<IgnoreBiomeSelectionWeight>true</IgnoreBiomeSelectionWeight>
+        </li>
+	</modExtensions>
     <leaderTitle>knight-chancellor</leaderTitle>
     <requiredCountAtGameStart>0</requiredCountAtGameStart>
 	<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
@@ -175,11 +187,6 @@
       </li>
     </pawnGroupMakers>
     <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
-	<apparelStuffFilter>
-			<thingDefs>
-				<li>Cloth</li>
-			</thingDefs>
-		</apparelStuffFilter>
   </FactionDef>
 
   <ThingSetMakerDef>

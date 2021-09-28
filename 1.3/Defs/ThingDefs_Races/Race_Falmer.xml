@@ -4,13 +4,13 @@
 	<AlienRace.ThingDef_AlienRace ParentName="ESCP_BasePawnMer">
 		<defName>ESCP_FalmerRace</defName>
 		<label>Falmer</label>
-		<description>An elven race whose colonies can be found in many places. The Falmer were often thought to be extinct, wiped out after a great war with human settlers.\n\nThe truth is that they were simply lost to time. Many of the Falmer sought refuge amongst the Dwemer, in their vast underground cities. After the dissapearance of the Dwemer, the Falmer were left, entombed, deep underground. They slowly degenerated, becoming a grim reminder of Dwemer ingenuity. For the Dwemer built a tomb that the Falmer could never escape.\n\nThe untainted Falmer sought refuge within forgotten vales, deep within the mountain ranges of the far north. Because of this, the Falmer have been left behind in terms of technology, with most simply wielding spears and bows.\n\nFalmer are highly adapted to the frigid north. They are able to withstand temperatures that would instantly freeze most others, though becuase of this they do not fare particllarly well in more moderate temperatures.</description>
+		<description>An elven race whose colonies can be found in many places. The Falmer were often thought to be extinct, wiped out after a great war with human settlers.\n\nThe truth is that they were simply lost to time. Many of the Falmer sought refuge amongst the Dwemer, in their vast underground cities. After the dissapearance of the Dwemer, the Falmer were left, entombed, deep underground. They slowly degenerated, becoming a grim reminder of Dwemer ingenuity. For the Dwemer built a tomb that the Falmer could never escape.\n\nThe untainted Falmer sought refuge within forgotten vales, deep within the mountain ranges of the far north. Because of this, the Falmer have been left behind in terms of technology, with most simply wielding spears and bows.\n\nFalmer are highly adapted to the frigid north. They are able to withstand temperatures that would instantly freeze most others, though becuase of this they do not fare particularly well in more moderate temperatures.</description>
 		<statBases>
 			  <RoyalFavorValue>4</RoyalFavorValue>
 			  <MarketValue>1900</MarketValue>
 			  <MoveSpeed>4.6</MoveSpeed>
-			  <ComfyTemperatureMin>-100</ComfyTemperatureMin>
-			  <ComfyTemperatureMax>18</ComfyTemperatureMax>
+			  <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+			  <ComfyTemperatureMax>15</ComfyTemperatureMax>
 			  <LeatherAmount>50</LeatherAmount>
 			  <PsychicSensitivity>1.2</PsychicSensitivity>
 			  <GlobalLearningFactor>1.1</GlobalLearningFactor>

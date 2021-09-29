@@ -11,7 +11,6 @@
 			  <MoveSpeed>4.6</MoveSpeed>
 			  <ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			  <ComfyTemperatureMax>15</ComfyTemperatureMax>
-			  <LeatherAmount>50</LeatherAmount>
 			  <PsychicSensitivity>1.2</PsychicSensitivity>
 			  <GlobalLearningFactor>1.1</GlobalLearningFactor>
 			  <SocialImpact>1.1</SocialImpact>

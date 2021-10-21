@@ -46,8 +46,8 @@
 		<label>New Falmer Tribe</label>
 		<description>A small Falmer tribe.</description>
 		<isPlayer>true</isPlayer>
-		<pawnSingular>altmer tribseman</pawnSingular>
-		<pawnsPlural>altmer tribsepeople</pawnsPlural>
+		<pawnSingular>Falmer tribseman</pawnSingular>
+		<pawnsPlural>Falmer tribsepeople</pawnsPlural>
 		<basicMemberKind>ESCP_FalmerTribalKind</basicMemberKind>
 		<techLevel>Neolithic</techLevel>
 		<backstoryFilters>
@@ -90,8 +90,8 @@
 		<label>New Falmer Kingdom</label>
 		<description>A small Falmer kingdom.</description>
 		<isPlayer>true</isPlayer>
-		<pawnSingular>altmer tribseman</pawnSingular>
-		<pawnsPlural>altmer tribsepeople</pawnsPlural>
+		<pawnSingular>Falmer tribseman</pawnSingular>
+		<pawnsPlural>Falmer tribsepeople</pawnsPlural>
 		<basicMemberKind>ESCP_FalmerMedievalKind</basicMemberKind>
 		<techLevel>Medieval</techLevel>
 		<backstoryFilters>

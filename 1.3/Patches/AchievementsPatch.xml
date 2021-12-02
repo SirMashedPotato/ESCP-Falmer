@@ -29,40 +29,10 @@
 							<incident>ESCP_FalmerJoins</incident>
 						</AchievementsExpanded.Reward_MapIncident>
 						
-						<!-- -->
-
+						<!-- Colonists -->
+										
 						<AchievementsExpanded.AchievementDef>
-							<defName>ESCP_FalmerSlayer</defName>
-							<label>They Were Practically Extinct Already</label>
-							<description>Slay 50 Falmer</description>
-							<bgtexPath>Achievements/ESCP_AchievementBackgroundFalmer</bgtexPath>
-							<tab>ESCP_AchievementsTab</tab>
-							<tracker Class="AchievementsExpanded.KillTracker">
-								<raceDef>ESCP_FalmerRace</raceDef>
-								<count>50</count>
-							</tracker>
-
-							<texPath>Achievements/ESCP_FalmerSlayer</texPath>
-							<points>25</points>
-						</AchievementsExpanded.AchievementDef>
-						
-						<AchievementsExpanded.AchievementDef>
-							<defName>ESCP_AchievementFalmerSettlement</defName>
-							<label>Giving Them One Final Push</label>
-							<description>Destroy a Falmer settlement belonging to the Civil Falmer Colonies faction</description>
-							<bgtexPath>Achievements/ESCP_AchievementBackgroundFalmer</bgtexPath>
-							<tab>ESCP_AchievementsTab</tab>
-							<tracker Class="AchievementsExpanded.SettlementDefeatTracker">
-								<def>ESCP_FalmerTribeCivil</def>
-								<count>1</count>
-							</tracker>
-
-							<texPath>Achievements/ESCP_AchievementFalmerSettlement</texPath>
-							<points>25</points>
-						</AchievementsExpanded.AchievementDef>
-						
-						<AchievementsExpanded.AchievementDef>
-							<defName>ESCP_AchievementFalmerColonists</defName>
+							<defName>ESCP_AchievementFalmer_FalmerColonists</defName>
 							<label>A New Place To Call Home</label>
 							<description>Have 12 Falmer in your colony at the same time</description>
 							<bgtexPath>Achievements/ESCP_AchievementBackgroundFalmer</bgtexPath>
@@ -76,10 +46,42 @@
 								</raceDefs>
 							</tracker>
 
-							<texPath>Achievements/ESCP_AchievementFalmerColonists</texPath>
+							<texPath>Achievements/ESCP_AchievementFalmer_FalmerColonists</texPath>
 							<points>25</points>
 						</AchievementsExpanded.AchievementDef>
 						
+						<!-- Kills -->
+
+						<AchievementsExpanded.AchievementDef>
+							<defName>ESCP_AchievementFalmer_FalmerSlayer</defName>
+							<label>They Were Practically Extinct Already</label>
+							<description>Slay 50 Falmer</description>
+							<bgtexPath>Achievements/ESCP_AchievementBackgroundFalmer</bgtexPath>
+							<tab>ESCP_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KillTracker">
+								<raceDef>ESCP_FalmerRace</raceDef>
+								<count>50</count>
+							</tracker>
+
+							<texPath>Achievements/ESCP_AchievementFalmer_FalmerSlayer</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>ESCP_AchievementFalmer_DestroyFalmerSettlement</defName>
+							<label>Giving Them One Final Push</label>
+							<description>Destroy a Falmer settlement belonging to the Falmer Remnants faction</description>
+							<bgtexPath>Achievements/ESCP_AchievementBackgroundFalmer</bgtexPath>
+							<tab>ESCP_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.SettlementDefeatTracker">
+								<def>ESCP_FalmerTribeCivil</def>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/ESCP_AchievementFalmer_DestroyFalmerSettlement</texPath>
+							<points>15</points>
+						</AchievementsExpanded.AchievementDef>
+
 					</value>
 				</li>
 			</operations>

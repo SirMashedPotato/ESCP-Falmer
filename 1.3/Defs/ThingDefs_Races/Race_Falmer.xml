@@ -10,7 +10,6 @@
 				<hypothermiaResistant>true</hypothermiaResistant>
 				<frostbiteResistant>true</frostbiteResistant>
 				<hypothermiaDef>HypothermicSlowdown</hypothermiaDef>
-
             </li>
 		</modExtensions>
 		<statBases>

@@ -6,7 +6,7 @@
 	<supportedVersions>
     	<li>1.3</li>
 	</supportedVersions>
-	<description>adds in a playable Falmer race using Humanoid Alien Race Framework. Falmer are highly adapted to living in cold environments, and will only suffer hypothermia or frostbite in extremely low temperatures. Due to their near extinction, the Falmer are very likely to generate with relationships.\n\n-Supports Vanilla Achievements Expanded\n-Requires Harmony\n-Requires Humanoid Alien Races 2.0\n-Based on the 'Elder Scrolls' series by Bethesda Game Studios.
+	<description>Adds in a playable Falmer race using Humanoid Alien Race Framework. Falmer are highly adapted to living in cold environments, and will only suffer hypothermia or frostbite in extremely low temperatures. Due to their near extinction, the Falmer are very likely to generate with relationships.\n\n-Supports Vanilla Achievements Expanded\n-Requires Harmony\n-Requires Humanoid Alien Races 2.0\n-Based on the 'Elder Scrolls' series by Bethesda Game Studios.
 	</description>
 	<modDependencies>
 	  <li>

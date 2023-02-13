@@ -2,7 +2,7 @@
 <Defs>
 	<RitualVisualEffectDef>
 		<defName>ESCP_FalmerRitualStyle</defName>
-		<tintColor>(249, 219, 133)</tintColor>
+		<tintColor>(245, 238, 238)</tintColor>
 		<comps>
 			<li>
 				<compClass>CompRitualEffect_ConstantCenter</compClass>
@@ -11,7 +11,7 @@
 			</li>
 			<li Class="CompProperties_RitualEffectConstantCircle">
 				<radius>7.0</radius>
-				<numCopies>5</numCopies>
+				<numCopies>8</numCopies>
 				<moteDef>ESCP_FalmerRitualBanner</moteDef>
 				<scalePositionWithRoom>true</scalePositionWithRoom>
 				<onlySpawnInSameRoom>true</onlySpawnInSameRoom>

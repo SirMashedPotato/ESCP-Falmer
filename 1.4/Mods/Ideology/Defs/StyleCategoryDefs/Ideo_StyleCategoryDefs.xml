@@ -4,7 +4,7 @@
 		<defName>ESCP_FalmerStyle</defName>
 		<label>Falmeri</label>
 		<iconPath>World/WorldObjects/Expanding/ESCP_FalmerSettlement</iconPath>
-		<soundOngoingRitual>RitualSustainer_Morbid</soundOngoingRitual>
+		<!--<soundOngoingRitual>RitualSustainer_Hindu</soundOngoingRitual>--> <!-- TODO -->
 		<ritualVisualEffectDef>ESCP_FalmerRitualStyle</ritualVisualEffectDef>
 		<thingDefStyles>
 			<!-- Don't remove this, it breaks world gen -->

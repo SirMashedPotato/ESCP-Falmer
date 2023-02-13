@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualVisualEffectDef>
+		<defName>ESCP_FalmerRitualStyle</defName>
+		<tintColor>(249, 219, 133)</tintColor>
+		<comps>
+			<li>
+				<compClass>CompRitualEffect_ConstantCenter</compClass>
+				<moteDef>Mote_RitualSmokeThick</moteDef>
+				<scaleWithRoom>true</scaleWithRoom>
+			</li>
+			<li Class="CompProperties_RitualEffectConstantCircle">
+				<radius>7.0</radius>
+				<numCopies>5</numCopies>
+				<moteDef>ESCP_FalmerRitualBanner</moteDef>
+				<scalePositionWithRoom>true</scalePositionWithRoom>
+				<onlySpawnInSameRoom>true</onlySpawnInSameRoom>
+				<offset>(0, 0, 0.5)</offset>
+				<roomCheckOffset>(0, 0, -1)</roomCheckOffset>
+			</li>
+			<li Class="CompProperties_RitualEffectIntervalSpawnCircle">
+				<moteDef>ESCP_RandomMote_FalmerLetters</moteDef>
+				<area>(27, 28)</area>
+				<radius>6</radius>
+				<concentration>2</concentration>
+				<spawnIntervalTicks>6</spawnIntervalTicks>
+				<spawnCount>5</spawnCount>
+				<rotation>0~0</rotation>
+				<scalePositionWithRoom>true</scalePositionWithRoom>
+				<onlySpawnInSameRoom>true</onlySpawnInSameRoom>
+			</li>
+		</comps>
+	</RitualVisualEffectDef>
+</Defs>

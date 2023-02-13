@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<StyleCategoryDef>
+		<defName>ESCP_FalmerStyle</defName>
+		<label>Falmeri</label>
+		<iconPath>World/WorldObjects/Expanding/ESCP_FalmerSettlement</iconPath>
+		<soundOngoingRitual>RitualSustainer_Morbid</soundOngoingRitual>
+		<ritualVisualEffectDef>ESCP_FalmerRitualStyle</ritualVisualEffectDef>
+		<thingDefStyles>
+			<!-- Don't remove this, it breaks world gen -->
+		</thingDefStyles>
+	</StyleCategoryDef>
+</Defs>

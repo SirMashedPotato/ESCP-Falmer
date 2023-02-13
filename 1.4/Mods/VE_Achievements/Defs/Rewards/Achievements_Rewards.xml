@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AchievementsExpanded.Reward_MapIncident ParentName="ESCP_AchievementReward_PawnJoins_Base">
+		<defName>ESCP_AchievementReward_PawnJoins_Falmer</defName>
+		<label>Falmer subject joins</label>
+		<incident>ESCP_AchievementReward_PawnJoinsIncident_Falmer</incident>
+	</AchievementsExpanded.Reward_MapIncident>
+</Defs>

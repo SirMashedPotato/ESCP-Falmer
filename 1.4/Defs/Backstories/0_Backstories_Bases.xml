@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_Falmer_ChildhoodBase]========== -->
+	<AlienRace.AlienBackstoryDef Name="ESCP_Falmer_ChildhoodBase" Abstract="True" >
+		<slot>Childhood</slot>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<spawnCategories>
+			<li>ESCP_FalmerBackstory_Childhood</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_Falmer_AdulthoodBase]========== -->
+	<AlienRace.AlienBackstoryDef Name="ESCP_Falmer_AdulthoodBase" Abstract="True" >
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>ESCP_FalmerBackstory_Adulthood</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_Falmer_AdulthoodBackstory_MageBase]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_MageBase" Name="ESCP_Falmer_AdulthoodBackstory_MageBase" Abstract="True">
+		<spawnCategories Inherit="False">
+			<li>ESCP_FalmerBackstory_Adulthood</li>
+			<li>ESCP_FalmerBackstory_AdulthoodMage</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

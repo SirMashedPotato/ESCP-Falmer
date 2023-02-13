@@ -1,79 +1,125 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-  <CultureDef>
-    <defName>ESCP_Falmeri</defName>
-    <label>Falmeri</label>
-    <description>An ancient culture common among Falmer tribes.</description>
-    <pawnNameMaker>NamerPersonCorunan</pawnNameMaker>
-    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoCorunan</ideoNameMaker>
-    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">ESCP_NamerDeity_Falmeri</deityNameMaker>
-    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerCorunan</deityTypeMaker>
-    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalCorunan</festivalNameMaker>
-    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">ESCP_LeaderTitleMaker_Falmeri</leaderTitleMaker>
-    <allowedPlaceTags>
-      <li>OriginTribal</li>
-    </allowedPlaceTags>
-    <iconPath>World/WorldObjects/Expanding/ESCP_FalmerSettlement</iconPath>
-    <preferredWeaponClasses>
-      <noble>MeleePiercer</noble>
-      <despised>MeleeBlunt</despised>
-    </preferredWeaponClasses>
-    <thingStyleCategories>
-      <li MayRequire="Ludeon.RimWorld.Ideology">
-        <category>ESCP_FalmerStyle</category>
-        <priority>2</priority>
-      </li>
-	  <li MayRequire="Ludeon.RimWorld.Ideology">
-        <category>Rustic</category>
-        <priority>1</priority>
-      </li>
-    </thingStyleCategories>
-    <styleItemTags>
-	  <!--
-	  <li>
-        <tag>ESCP_TattooFaceFalmer</tag>
-        <baseWeight>1</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-	  -->
-	  <li>
-        <tag>Medieval</tag>
-        <baseWeight>1</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-	  <li>
-        <tag>Tribal</tag>
-        <baseWeight>1</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-      <li>
-        <tag>NoBeard</tag>
-        <baseWeight>10</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-      <li>
-        <tag>BeardTribal</tag>
-        <baseWeight>0.3</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-      <li>
-        <tag>TattooFaceTribal</tag>
-        <baseWeight>0.4</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-      <li>
-        <tag>TattooBodyTribal</tag>
-        <baseWeight>0.4</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-      <li>
-        <tag>NoTattoo</tag>
-        <baseWeight>1</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-    </styleItemTags>
-  </CultureDef>
-  
+	<CultureDef>
+		<defName>ESCP_FalmerCulture</defName>
+		<label>Falmeri</label>
+		<description>An ancient culture common among the Falmer.</description>
+		<pawnNameMaker>ESCP_Falmer_NamerMale</pawnNameMaker>
+		<pawnNameMakerFemale>ESCP_Falmer_NamerFemale</pawnNameMakerFemale>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoCorunan</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">ESCP_Falmer_NamerCultureDeityName</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerCorunan</deityTypeMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalCorunan</festivalNameMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">ESCP_Falmer_NamerCultureLeaderTitle</leaderTitleMaker>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.IdeoCultureProperties">
+				<overrideDivines>true</overrideDivines>
+				<divinesList>
+					<li>
+						<name>Auri-El</name>
+						<type>King of the Aldmer</type>
+						<gender>Male</gender>
+						<iconPath>UI/Deities/ESCP_DeityAuriEl</iconPath>
+					</li>
+					<li>
+						<name>Magnus</name>
+						<type>the God of Sorcery</type>
+						<gender>Male</gender>
+						<iconPath>UI/Deities/ESCP_DeityMagnus</iconPath>
+					</li>
+					<li>
+						<name>Trinimac</name>
+						<type>the Golden Champion</type>
+						<gender>Male</gender>
+						<iconPath>UI/Deities/ESCP_DeityTrinimac</iconPath>
+					</li>
+					<li>
+						<name>Y'ffre</name>
+						<type>the God of the Forest</type>
+						<gender>Male</gender>
+						<iconPath>UI/Deities/ESCP_DeityYffre</iconPath>
+					</li>
+					<li>
+						<name>Xarxes</name>
+						<type>the God of Ancestry</type>
+						<gender>Male</gender>
+						<iconPath>UI/Deities/ESCP_DeityXarxes</iconPath>
+					</li>
+					<li>
+						<name>Mara</name>
+						<type>the Godess of Love</type>
+						<gender>Female</gender>
+						<iconPath>UI/Deities/ESCP_DeityMara</iconPath>
+					</li>
+					<li>
+						<name>Stendarr</name>
+						<type>the God of Mercy</type>
+						<gender>Male</gender>
+						<iconPath>UI/Deities/ESCP_DeityStendarr</iconPath>
+					</li>
+					<li>
+						<name>Syrabane</name>
+						<type>the Warlock's God</type>
+						<gender>Male</gender>
+						<iconPath>UI/Deities/ESCP_DeitySyrabane</iconPath>
+					</li>
+				</divinesList>
+			</li>
+		</modExtensions>
+		<allowedPlaceTags>
+			<li>OriginTribal</li>
+		</allowedPlaceTags>
+		<iconPath>World/WorldObjects/Expanding/ESCP_FalmerSettlement</iconPath>
+		<preferredWeaponClasses>
+			<noble>MeleePiercer</noble>
+			<despised>MeleeBlunt</despised>
+		</preferredWeaponClasses>
+		<thingStyleCategories>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>ESCP_FalmerStyle</category>
+				<priority>2</priority>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>Rustic</category>
+				<priority>1</priority>
+			</li>
+		</thingStyleCategories>
+		<styleItemTags>
+			<li>
+				<tag>Medieval</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Tribal</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardTribal</tag>
+				<baseWeight>0.3</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooFaceTribal</tag>
+				<baseWeight>0.4</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooBodyTribal</tag>
+				<baseWeight>0.4</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
 </Defs>

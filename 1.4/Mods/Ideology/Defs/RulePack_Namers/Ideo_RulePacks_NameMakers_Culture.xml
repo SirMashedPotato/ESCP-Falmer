@@ -26,11 +26,13 @@
 		<include>
 			<li>NamerDeityGlobal</li>
 		</include>
-		<rulesStrings>
-			<li>name->[FalmerGods]</li>
-		</rulesStrings>
-		<rulesFiles>
-			<li>FalmerGods->ESCP_FalmerNames/FalmerGods</li>
-		</rulesFiles>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[FalmerGods]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>FalmerGods->ESCP_FalmerNames/FalmerGods</li>
+			</rulesFiles>
+		</rulePack>
 	</RulePackDef>
 </Defs>

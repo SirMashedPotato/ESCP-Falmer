@@ -1,64 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+	<!-- ========== [ESCP_Falmer_NamerMale] ========== -->
 	<RulePackDef>
-		<defName>ESCP_NamerPersonFalmerMale</defName>
-		<include>
-		  <li>TribalWordUtility</li>
-		</include>
+		<defName>ESCP_Falmer_NamerMale</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[MaleList] [FamilyList]</li>
-				<li>name(p=0.05)->[MaleList] 'the [a] [Animal]' [FamilyList]</li>
-				<li>name(p=0.01)->[MaleList] 'chosen of [FalmerGods]' [FamilyList]</li>
 			</rulesStrings>
-			<rulesRaw>
-				<li Class="Rule_File">
-					<keyword>MaleList</keyword>
-					<path>ESCP_FalmerNames/FalmerMale</path>
-				</li>
-				<li Class="Rule_File">
-					<keyword>FamilyList</keyword>
-					<path>ESCP_FalmerNames/FalmerFamily</path>
-				</li>
-			</rulesRaw>
 			<rulesFiles>
-				<li>a->ESCP_FalmerNames/FalmerFactionA</li>
-				<li>b->ESCP_FalmerNames/FalmerFactionB</li>
-				<li>c->ESCP_FalmerNames/FalmerFactionC</li>
-				<li>FalmerGods->ESCP_FalmerNames/FalmerGods</li>
+				<li>MaleList->ESCP_FalmerNames/FalmerMale</li>
+				<li>FamilyList->ESCP_FalmerNames/FalmerFamily</li>
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
-
+	<!-- ========== [ESCP_Falmer_NamerFemale] ========== -->
 	<RulePackDef>
-		<defName>ESCP_NamerPersonFalmerFemale</defName>
-		<include>
-		  <li>TribalWordUtility</li>
-		</include>
+		<defName>ESCP_Falmer_NamerFemale</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[FemaleList] [FamilyList]</li>
-				<li>name(p=0.05)->[FemaleList] 'the [a] [Animal]' [FamilyList]</li>
-				<li>name(p=0.01)->[FemaleList] 'chosen of [FalmerGods]' [FamilyList]</li>
 			</rulesStrings>
-			<rulesRaw>
-				<li Class="Rule_File">
-					<keyword>FemaleList</keyword>
-					<path>ESCP_FalmerNames/FalmerFemale</path>
-				</li>
-				<li Class="Rule_File">
-					<keyword>FamilyList</keyword>
-					<path>ESCP_FalmerNames/FalmerFamily</path>
-				</li>
-			</rulesRaw>
 			<rulesFiles>
-				<li>a->ESCP_FalmerNames/FalmerFactionA</li>
-				<li>b->ESCP_FalmerNames/FalmerFactionB</li>
-				<li>c->ESCP_FalmerNames/FalmerFactionC</li>
-				<li>FalmerGods->ESCP_FalmerNames/FalmerGods</li>
+				<li>FemaleList->ESCP_FalmerNames/FalmerFemale</li>
+				<li>FamilyList->ESCP_FalmerNames/FalmerFamily</li>
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
-	
 </Defs>

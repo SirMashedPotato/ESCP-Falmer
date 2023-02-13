@@ -3,7 +3,7 @@
 	<FactionDef ParentName="ESCP_NonPlayerFactionBase_TribalCivil">
 		<defName>ESCP_FalmerNonPlayerFaction_Civil</defName>
 		<label>Falmer remnants</label>
-		<description>The remnants of the Falmer race. The true Falmer were once thought long extinct, with only their degenerated cousins remaining. Recently the untainted Falmer have made their presence known, though they rarely venture from their cities.\n\nThe Falmer are generally welcoming, if not somewhat weary, of outsiders, due to their isolation they have little to trade.</description>
+		<description>The remnants of the Falmer race. The true Falmer were once thought long extinct, with only their degenerated cousins remaining. Recently the untainted Falmer have made their presence known, though they rarely venture from their cities.\n\nThe Falmer are generally welcoming, if not somewhat weary, of outsiders. Due to their isolation they have little to trade.</description>
 		<modExtensions>
 			<li Class="ESCP_RaceTools.SettlementPreference">
 				<useTemperatureRange>true</useTemperatureRange>

@@ -20,8 +20,8 @@
 		<defName>ESCP_Falmer_NamerSettlement</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>r_name->The [a] [c]</li>
-				<li>r_name->[c] of [FalmerGods]</li>
+				<li>r_name(p=2)->The [a] [c]</li>
+				<li>r_name(p=0.5)->[c] of [FalmerGods]</li>
 			</rulesStrings>
 			<rulesFiles>
 				<li>a->ESCP_FalmerNames/FalmerFactionA</li>

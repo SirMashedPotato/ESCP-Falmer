@@ -6,9 +6,8 @@
 		<description>Carriers of this gene exhibit some of the bonuses typically displayed by the Falmer race, though at a comparatively weaker level.</description>
 		<iconPath>UI/Icons/Genes/ESCP_InheritedBonus/ESCP_GeneInheritedBonus_Falmer</iconPath>
 		<statOffsets>
-			<ComfyTemperatureMax>2</ComfyTemperatureMax>
-			<GlobalLearningFactor>0.1</GlobalLearningFactor>
-			<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">-0.1</CertaintyLossFactor>
+			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
+			<ComfyTemperatureMax>-2</ComfyTemperatureMax>
 		</statOffsets>
 		<displayOrderInCategory>7</displayOrderInCategory>
 	</GeneDef>

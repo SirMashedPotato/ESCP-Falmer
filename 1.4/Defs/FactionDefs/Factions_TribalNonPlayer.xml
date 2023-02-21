@@ -42,7 +42,7 @@
 		</structureMemeWeights>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
-			<li MayRequire="VanillaExpanded.VMemesE">AM_Artist</li>
+			<li MayRequire="Sarg.Alphamemes">AM_Artist</li>
 		</requiredMemes>
 		<pawnGroupMakers>
 			<li>

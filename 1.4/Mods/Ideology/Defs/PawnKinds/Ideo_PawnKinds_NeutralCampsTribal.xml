@@ -7,7 +7,7 @@
 		<combatPower>35</combatPower>
 		<backstoryFiltersOverride>
 			<li>
-				<categoriesAdulthood>
+				<categoriesAdulthood Inherit="False">
 					<li>TribalMiner</li>
 				</categoriesAdulthood>
 			</li>
@@ -36,7 +36,7 @@
 		<combatPower>35</combatPower>
 		<backstoryFiltersOverride>
 			<li>
-				<categoriesAdulthood>
+				<categoriesAdulthood Inherit="False">
 					<li>TribalFarmer</li>
 				</categoriesAdulthood>
 			</li>

@@ -29,13 +29,13 @@
 		<alienRace>
 			<generalSettings>
 				<alienPartGenerator>
-				<oldHairColorGen Class="ColorGenerator_Options" IgnoreIfNoMatchingField="True">
-					  <options>
-						<li>
-						  <min>(1,1,1)</min>
-						  <max>(1,1,1)</max>
-						</li>
-					  </options>
+					<oldHairColorGen Class="ColorGenerator_Options" IgnoreIfNoMatchingField="True">
+						<options>
+							<li>
+								<min>(1,1,1)</min>
+								<max>(1,1,1)</max>
+							</li>
+						</options>
 					</oldHairColorGen>
 					<colorChannels>
 						<li>
@@ -114,6 +114,39 @@
 						</li>
 					</colorChannels>
 				</alienPartGenerator>
+				<!-- =====[Biotech backstory bullshit]===== -->
+				<newbornBackstoryFilter>
+					<li>
+						<categories>
+							<li>ESCP_GenericBiotechBackstory_Newborn</li>
+						</categories>
+						<commonality>1</commonality>
+					</li>
+				</newbornBackstoryFilter>
+				<childBackstoryFilter>
+					<li>
+						<categories>
+							<li>ESCP_GenericBiotechBackstory_Child</li>
+						</categories>
+						<commonality>1</commonality>
+					</li>
+				</childBackstoryFilter>
+				<adultBackstoryFilter>
+					<li>
+						<categories>
+							<li>ESCP_GenericBiotechBackstory_Adult</li>
+						</categories>
+						<commonality>1</commonality>
+					</li>
+				</adultBackstoryFilter>
+				<adultVatBackstoryFilter>
+					<li>
+						<categories>
+							<li>ESCP_GenericBiotechBackstory_VatGrown</li>
+						</categories>
+						<commonality>1</commonality>
+					</li>
+				</adultVatBackstoryFilter>
 			</generalSettings>
 			<thoughtSettings>
 				<cannotReceiveThoughts>

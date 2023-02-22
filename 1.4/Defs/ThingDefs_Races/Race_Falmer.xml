@@ -154,6 +154,11 @@
 					<li>EnvironmentCold</li>
 				</cannotReceiveThoughts>
 			</thoughtSettings>
+			<raceRestriction>
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_GeneInheritedBonus_Falmer</li>
+				</blackGeneList>
+			</raceRestriction>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>
 </Defs>

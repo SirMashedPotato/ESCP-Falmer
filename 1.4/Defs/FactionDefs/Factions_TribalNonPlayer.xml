@@ -98,6 +98,22 @@
 					<ESCP_Falmer_Tribal_ChiefMelee>1.5</ESCP_Falmer_Tribal_ChiefMelee>
 				</options>
 			</li>
+			<li Class="VanillaPsycastsExpanded.PawnGroupMaker_PsycasterRaid" MayRequire="VanillaExpanded.VPsycastsE">
+				<!-- VE Psycaster raid -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<ESCP_Falmer_Tribal_Penitent>5</ESCP_Falmer_Tribal_Penitent>
+					<ESCP_Falmer_Tribal_Warrior>5</ESCP_Falmer_Tribal_Warrior>
+					<ESCP_Falmer_Tribal_Archer>10</ESCP_Falmer_Tribal_Archer>
+					<ESCP_Falmer_Tribal_Hunter>10</ESCP_Falmer_Tribal_Hunter>
+					<ESCP_Falmer_Tribal_HeavyArcher>10</ESCP_Falmer_Tribal_HeavyArcher>
+					<ESCP_Falmer_Tribal_Berserker>5</ESCP_Falmer_Tribal_Berserker>
+					<ESCP_Falmer_Tribal_ChiefRanged>3</ESCP_Falmer_Tribal_ChiefRanged>
+					<ESCP_Falmer_Tribal_ChiefMelee>1.5</ESCP_Falmer_Tribal_ChiefMelee>
+					<ESCP_Falmer_Tribal_PsycasterFrost>0.3</ESCP_Falmer_Tribal_PsycasterFrost>
+				</options>
+			</li>
 			<li>
 				<!-- Peaceful -->
 				<kindDef>Peaceful</kindDef>

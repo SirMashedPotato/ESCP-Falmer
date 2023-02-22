@@ -26,6 +26,9 @@
 					<li>ESCP_GenericBackstory_AdulthoodMage</li>
 					<li>ESCP_FalmerBackstory_Adulthood</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_FalmerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_FalmerBackstory_Exclusion</li>
 				</excludeAdulthood>
@@ -127,11 +130,23 @@
 		<defName>ESCP_Falmer_Tribal_Hunter</defName>
 		<label>hunter</label>
 		<combatPower>60</combatPower>
-		<backstoryFiltersOverride>
+		<backstoryFiltersOverride Inherit="False">
 			<li>
-				<categoriesAdulthood Inherit="False">
-					<li>TribalHunter</li>
+				<categoriesChildhood>
+					<li>ESCP_FalmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+					<li>ESCP_GenericBackstory_ChildhoodHighClass</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>ESCP_GenericBackstory_AdulthoodMedievalHunter</li>
+					<li>ESCP_FalmerBackstory_AdulthoodHunter</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_FalmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_FalmerBackstory_Exclusion</li>
+				</excludeAdulthood>
 			</li>
 		</backstoryFiltersOverride>
 		<gearHealthRange>0.5~1.8</gearHealthRange>

@@ -29,17 +29,8 @@
 		</li>
 	</modDependencies>
 	<loadAfter>
-		<li>brrainz.harmony</li>
-		<li>Ludeon.RimWorld</li>
-		<li>Ludeon.RimWorld.Ideology</li>
-		<li>Ludeon.RimWorld.Royalty</li>
-		<li>Ludeon.RimWorld.Biotech</li>
-		<li>erdelf.HumanoidAlienRaces</li>
 		<li>SirMashedPotato.ESCP.RaceTools</li>
-		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 	</loadAfter>
-	<loadBefore>
-	</loadBefore>
 	<incompatibleWith>
 		<li>SirMashedPotato.MorrowRim.FalmerRace</li>
 		<li>SirMashedPotato.MorrowRim.FalmerFactions</li>

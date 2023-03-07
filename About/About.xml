@@ -30,6 +30,7 @@
 	</modDependencies>
 	<loadAfter>
 		<li>SirMashedPotato.ESCP.RaceTools</li>
+		<li>SirMashedPotato.ESCP.IndustrialFactionsDummy</li>
 	</loadAfter>
 	<incompatibleWith>
 		<li>SirMashedPotato.MorrowRim.FalmerRace</li>

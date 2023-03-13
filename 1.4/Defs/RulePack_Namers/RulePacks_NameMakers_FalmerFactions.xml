@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========== [ESCP_Falmer_NamerFaction] ========== -->
+	<RulePackDef>
+		<defName>ESCP_Falmer_NamerFaction</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->Falmer remnants of the [a] [b]</li>
+				<li>r_name->Falmer remnants of [FalmerGods]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>a->ESCP_FalmerNames/FalmerFactionA</li>
+				<li>b->ESCP_FalmerNames/FalmerFactionB</li>
+				<li>FalmerGods->ESCP_FalmerNames/FalmerGods</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<!-- ========== [ESCP_Falmer_NamerSettlement] ========== -->
+	<RulePackDef>
+		<defName>ESCP_Falmer_NamerSettlement</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=2)->The [a] [c]</li>
+				<li>r_name(p=0.5)->[c] of [FalmerGods]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>a->ESCP_FalmerNames/FalmerFactionA</li>
+				<li>b->ESCP_FalmerNames/FalmerFactionB</li>
+				<li>c->ESCP_FalmerNames/FalmerFactionC</li>
+				<li>FalmerGods->ESCP_FalmerNames/FalmerGods</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+</Defs>

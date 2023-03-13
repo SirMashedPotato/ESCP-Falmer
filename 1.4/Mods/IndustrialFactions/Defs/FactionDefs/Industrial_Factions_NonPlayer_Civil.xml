@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef ParentName="ESCP_NonPlayerFactionBase_IndustrialCivil" Name="ESCP_Industrial_FalmerNonPlayerFaction_CivilBase" Abstract="True">
+		<modExtensions>
+			<li Class="ESCP_RaceTools.SettlementPreference">
+				<useTemperatureRange>true</useTemperatureRange>
+				<temperatureRangeMin>-80</temperatureRangeMin>
+				<temperatureRangeMax>10</temperatureRangeMax>
+				<requiredHillLevels>
+					<li>LargeHills</li>
+					<li>Mountainous</li>
+				</requiredHillLevels>
+				<IgnoreBiomeSelectionWeight>true</IgnoreBiomeSelectionWeight>
+			</li>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_FalmerFaction</li>
+					<li>ESCP_FalmerFactionNonPlayer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
+		<leaderTitle>king</leaderTitle>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_FalmerSettlement</factionIconPath>
+		<factionNameMaker>ESCP_Falmer_NamerFaction</factionNameMaker>
+		<settlementNameMaker>ESCP_Falmer_NamerSettlement</settlementNameMaker>
+		<allowedCultures>
+			<li>ESCP_FalmerCulture</li>
+		</allowedCultures>
+		<structureMemeWeights>
+			<ESCP_Structure_OriginDivinesEight MayRequire="Ludeon.RimWorld.Ideology">20</ESCP_Structure_OriginDivinesEight>
+		</structureMemeWeights>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+			<li MayRequire="Sarg.Alphamemes">AM_Artist</li>
+		</requiredMemes>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, standard mix -->
+				<kindDef>Combat</kindDef>
+				<options>
+					<ESCP_Industrial_FalmerVillager>5</ESCP_Industrial_FalmerVillager>
+					<ESCP_Industrial_FalmerTown_Guard>10</ESCP_Industrial_FalmerTown_Guard>
+					<ESCP_Industrial_FalmerGrenadier_Destructive>1.5</ESCP_Industrial_FalmerGrenadier_Destructive>
+					<ESCP_Industrial_FalmerMercenary_Slasher>7</ESCP_Industrial_FalmerMercenary_Slasher>
+					<ESCP_Industrial_FalmerMercenary_Gunner>10</ESCP_Industrial_FalmerMercenary_Gunner>
+					<ESCP_Industrial_FalmerMercenary_Elite>10</ESCP_Industrial_FalmerMercenary_Elite>
+					<ESCP_Industrial_FalmerTown_Councilman>10</ESCP_Industrial_FalmerTown_Councilman>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<ESCP_Industrial_FalmerVillager>20</ESCP_Industrial_FalmerVillager>
+					<ESCP_Industrial_FalmerVillager_Child MayRequire="Ludeon.RimWorld.Biotech">10</ESCP_Industrial_FalmerVillager_Child>
+					<ESCP_Industrial_FalmerTown_Guard>10</ESCP_Industrial_FalmerTown_Guard>
+					<ESCP_Industrial_FalmerTown_Councilman>10</ESCP_Industrial_FalmerTown_Councilman>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<ESCP_Industrial_FalmerTown_Trader>1</ESCP_Industrial_FalmerTown_Trader>
+				</traders>
+				<carriers>
+					<MorrowRim_Guar MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">5</MorrowRim_Guar>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<ESCP_Industrial_FalmerVillager>3</ESCP_Industrial_FalmerVillager>
+					<ESCP_Industrial_FalmerTown_Guard>10</ESCP_Industrial_FalmerTown_Guard>
+					<ESCP_Industrial_FalmerGrenadier_Destructive>1.5</ESCP_Industrial_FalmerGrenadier_Destructive>
+					<ESCP_Industrial_FalmerMercenary_Slasher>7</ESCP_Industrial_FalmerMercenary_Slasher>
+					<ESCP_Industrial_FalmerMercenary_Gunner>10</ESCP_Industrial_FalmerMercenary_Gunner>
+					<ESCP_Industrial_FalmerMercenary_Elite>10</ESCP_Industrial_FalmerMercenary_Elite>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<ESCP_Industrial_FalmerVillager>10</ESCP_Industrial_FalmerVillager>
+					<ESCP_Industrial_FalmerTown_Guard>10</ESCP_Industrial_FalmerTown_Guard>
+					<ESCP_Industrial_FalmerGrenadier_Destructive>1.5</ESCP_Industrial_FalmerGrenadier_Destructive>
+					<ESCP_Industrial_FalmerMercenary_Slasher>7</ESCP_Industrial_FalmerMercenary_Slasher>
+					<ESCP_Industrial_FalmerMercenary_Gunner>10</ESCP_Industrial_FalmerMercenary_Gunner>
+					<ESCP_Industrial_FalmerMercenary_Elite>10</ESCP_Industrial_FalmerMercenary_Elite>
+					<ESCP_Industrial_FalmerTown_Councilman>10</ESCP_Industrial_FalmerTown_Councilman>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Industrial_FalmerMiner>1</ESCP_Industrial_FalmerMiner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Industrial_FalmerHunter>1</ESCP_Industrial_FalmerHunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Industrial_FalmerLogger>1</ESCP_Industrial_FalmerLogger>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Industrial_FalmerFarmer>1</ESCP_Industrial_FalmerFarmer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	<!-- ==========[ESCP_Industrial_FalmerNonPlayerFaction_Civil]========== -->
+	<FactionDef ParentName="ESCP_Industrial_FalmerNonPlayerFaction_CivilBase">
+		<defName>ESCP_Industrial_FalmerNonPlayerFaction_Civil</defName>
+		<label>Falmer colonies (industrial)</label>
+		<description>These people have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThis particular group holds civil behaviour in high regard.</description>
+	</FactionDef>
+</Defs>

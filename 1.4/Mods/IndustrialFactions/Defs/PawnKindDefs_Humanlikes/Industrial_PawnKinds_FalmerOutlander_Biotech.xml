@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_Industrial_FalmerGrenadier_Destructive]========== -->
+	<PawnKindDef ParentName="ESCP_ChildPawnKindBase_Industrial" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>ESCP_Industrial_FalmerVillager_Child</defName>
+		<!-- Falmer stuff -->
+		<race>ESCP_FalmerRace</race>
+		<defaultFactionType>ESCP_Industrial_FalmerNonPlayerFaction_Civil</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_FalmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+					<li>ESCP_GenericBackstory_ChildhoodHighClass</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_FalmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_FalmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_FalmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+</Defs>

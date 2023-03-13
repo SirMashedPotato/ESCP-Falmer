@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_PlayerPawnKindBase_Outlander]========== -->
+	<PawnKindDef ParentName="ESCP_PlayerPawnKindBase_Outlander">
+		<defName>ESCP_FalmerPlayerPawnKind_Outlander</defName>
+		<race>ESCP_FalmerRace</race>
+		<defaultFactionType>ESCP_FalmerPlayerFaction_Industrial</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Outlander</li>
+					<li>ESCP_FalmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+					<li>ESCP_GenericBackstory_ChildhoodHighClass</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_FalmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_FalmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_FalmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_PlayerPawnKindBase_Medieval]========== -->
+	<PawnKindDef ParentName="ESCP_PlayerPawnKindBase_Medieval">
+		<defName>ESCP_FalmerPlayerPawnKind_Medieval</defName>
+		<race>ESCP_FalmerRace</race>
+		<defaultFactionType>ESCP_FalmerPlayerFaction_Medieval</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>ESCP_FalmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+					<li>ESCP_GenericBackstory_ChildhoodHighClass</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_FalmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_FalmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_FalmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_PlayerPawnKindBase_Tribal]========== -->
+	<PawnKindDef ParentName="ESCP_PlayerPawnKindBase_Tribal">
+		<defName>ESCP_FalmerPlayerPawnKind_Tribal</defName>
+		<race>ESCP_FalmerRace</race>
+		<defaultFactionType>ESCP_FalmerPlayerFaction_Tribal</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>ESCP_FalmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodMedieval</li>
+					<li>ESCP_GenericBackstory_ChildhoodHighClass</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_FalmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_FalmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_FalmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+</Defs>

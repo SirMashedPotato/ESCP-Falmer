@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="ESCP_BaseRace_MerStandardHead">
+		<defName>ESCP_FalmerRace</defName>
+		<label>Falmer</label>
+		<description>An elven race well adapted to the cold north. Some living Falmer prefer to be referred to as 'Snow Elves', due to Falmer being associated with their degenerated cousins.\n\nThe Falmer have long been thought to be extinct, wiped out after a great war with the Nords. The truth is that they were simply lost to time. Many of the Falmer sought refuge amongst the Dwemer, in their vast underground cities. After the disappearance of the Dwemer, the Falmer were left, entombed, deep underground. They slowly degenerated, becoming a grim reminder of Dwemer ingenuity. For the Dwemer built a tomb that the Falmer could never escape.\n\nSome Falmer sought refuge within forgotten vales, deep within the mountain ranges of the far north. These 'untainted' Falmer are thought to be the last of their kind.\n\n&lt;color=#E5E54C&gt;Mer Blood&lt;/color&gt;\nPsychic sensitivity is increased by 20%\nFertility is decreased by 50%.\nBase health scale is decreased by 20%\nLife expectancy is increased to 300 years.\n\n&lt;color=#E5E54C&gt;Cold Adaptation&lt;/color&gt;\nMinimum comfortable temperature is decreased by 30°C (87.8°F).\nMaximum comfortable temperature is decreased by 6°C (42.8°F).\nThe thought for being in a cold environment is negated.\nThe thought for sleeping in the cold is negated.\nImmune to frostbite.\nGains the hypothermic slowdown hediff instead of hypothermia.</description>
+		<descriptionHyperlinks>
+			<GeneDef MayRequire="Ludeon.RimWorld.Biotech">ESCP_GeneInheritedBonus_Mer</GeneDef>
+			<GeneDef MayRequire="Ludeon.RimWorld.Biotech">ESCP_GeneInheritedBonus_Falmer</GeneDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.RaceProperties">
+				<hypothermiaResistant>true</hypothermiaResistant>
+				<frostbiteResistant>true</frostbiteResistant>
+				<hypothermiaDef>HypothermicSlowdown</hypothermiaDef>
+				<majorRacialGeneToInherit MayRequire="Ludeon.RimWorld.Biotech">ESCP_GeneInheritedBonus_Mer</majorRacialGeneToInherit>
+				<minorRacialGeneToInherit MayRequire="Ludeon.RimWorld.Biotech">ESCP_GeneInheritedBonus_Falmer</minorRacialGeneToInherit>
+			</li>
+		</modExtensions>
+		<statBases>
+			<ComfyTemperatureMin>-14</ComfyTemperatureMin>
+			<ComfyTemperatureMax>16</ComfyTemperatureMax>
+		</statBases>
+		<race>
+			<leatherDef>ESCP_LeatherFalmer</leatherDef>
+			<nameGenerator>ESCP_Falmer_NamerMale</nameGenerator>
+			<nameGeneratorFemale>ESCP_Falmer_NamerFemale</nameGeneratorFemale>
+		</race>
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<oldHairColorGen Class="ColorGenerator_Options" IgnoreIfNoMatchingField="True">
+						<options>
+							<li>
+								<min>(1,1,1)</min>
+								<max>(1,1,1)</max>
+							</li>
+						</options>
+					</oldHairColorGen>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>(220,220,225,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(237,237,243,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(233,237,243,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(233,237,249,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(233,233,248,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(224,227,239,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(248,247,227,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(254,254,252,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(254,254,227,255)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+						<li>
+							<name>hair</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>(220,220,225,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(237,237,243,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(233,237,243,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(233,237,249,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(233,233,248,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(224,227,239,255)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+				</alienPartGenerator>
+				<!-- =====[Biotech backstory bullshit]===== -->
+				<newbornBackstoryFilter>
+					<li>
+						<categories>
+							<li>ESCP_GenericBiotechBackstory_Newborn</li>
+						</categories>
+						<commonality>1</commonality>
+					</li>
+				</newbornBackstoryFilter>
+				<childBackstoryFilter>
+					<li>
+						<categories>
+							<li>ESCP_GenericBiotechBackstory_Child</li>
+						</categories>
+						<commonality>1</commonality>
+					</li>
+				</childBackstoryFilter>
+				<adultBackstoryFilter>
+					<li>
+						<categories>
+							<li>ESCP_GenericBiotechBackstory_Adult</li>
+						</categories>
+						<commonality>1</commonality>
+					</li>
+				</adultBackstoryFilter>
+				<adultVatBackstoryFilter>
+					<li>
+						<categories>
+							<li>ESCP_GenericBiotechBackstory_VatGrown</li>
+						</categories>
+						<commonality>1</commonality>
+					</li>
+				</adultVatBackstoryFilter>
+			</generalSettings>
+			<thoughtSettings>
+				<cannotReceiveThoughts>
+					<li>SleptInCold</li>
+					<li>EnvironmentCold</li>
+				</cannotReceiveThoughts>
+			</thoughtSettings>
+			<raceRestriction>
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_GeneInheritedBonus_Falmer</li>
+				</blackGeneList>
+			</raceRestriction>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>

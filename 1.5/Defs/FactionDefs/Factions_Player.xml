@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========== [ESCP_PlayerFactionBase_Industrial] ========== -->
+	<FactionDef ParentName="ESCP_PlayerFactionBase_Industrial">
+		<defName>ESCP_FalmerPlayerFaction_Industrial</defName>
+		<label>New Falmer Arrivals</label>
+		<basicMemberKind>ESCP_FalmerPlayerPawnKind_Outlander</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_FalmerSettlement</factionIconPath>
+		<allowedCultures>
+			<li>ESCP_FalmerCulture</li>
+		</allowedCultures>
+		<startingResearchTags>
+			<li>ESCP_FalmerStart_Industrial</li>
+		</startingResearchTags>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_FalmerFaction</li>
+					<li>ESCP_FalmerFactionPlayer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
+	</FactionDef>
+	<!-- ========== [ESCP_FalmerPlayerFactionBase_Tribal] ========== -->
+	<FactionDef ParentName="ESCP_PlayerFactionBase_Medieval">
+		<defName>ESCP_FalmerPlayerFaction_Medieval</defName>
+		<label>New Falmer Kingdom</label>
+		<basicMemberKind>ESCP_FalmerPlayerPawnKind_Medieval</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_FalmerSettlement</factionIconPath>
+		<allowedCultures>
+			<li>ESCP_FalmerCulture</li>
+		</allowedCultures>
+		<startingResearchTags>
+			<li>ESCP_FalmerStart_Medieval</li>
+		</startingResearchTags>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_FalmerFaction</li>
+					<li>ESCP_FalmerFactionPlayer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
+	</FactionDef>
+	<!-- ========== [ESCP_FalmerPlayerFactionBase_Tribal] ========== -->
+	<FactionDef ParentName="ESCP_PlayerFactionBase_Tribal">
+		<defName>ESCP_FalmerPlayerFaction_Tribal</defName>
+		<label>New Falmer Tribe</label>
+		<basicMemberKind>ESCP_FalmerPlayerPawnKind_Tribal</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_FalmerSettlement</factionIconPath>
+		<allowedCultures>
+			<li>ESCP_FalmerCulture</li>
+		</allowedCultures>
+		<startingResearchTags>
+			<li>ESCP_FalmerStart_Tribal</li>
+		</startingResearchTags>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_FalmerFaction</li>
+					<li>ESCP_FalmerFactionPlayer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
+	</FactionDef>
+</Defs>
